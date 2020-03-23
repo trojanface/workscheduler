@@ -1,5 +1,6 @@
 $("#currentDay").text(moment().format("dddd") + ", " + moment().format("MMMM Do")); //Displays the current date.
 let jobsArray = new Array; //The array to store the hourly tasks in.
+
 for (let i = 9; i < 18; i++) { //cycles through the hours in the work day
 	let newRow = $("<div class='time-block heightSpacer row'>"); //creates a new row to contain all the to-do elements.
 	if (i <= 12) { //differentiating between morning and afternoon.
