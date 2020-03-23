@@ -11,7 +11,16 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width: 99%;
 }
+
+@media screen and (max-width: 768px) {
+  .heightSpacer {
+    margin-top: 3%;
+  }
+}
+
+
 
 .jumbotron {
   text-align: center;
@@ -30,9 +39,18 @@ textarea{
   border-radius: 15px;
 }
 
+.col-md-2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.col-md-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .row {
   white-space: pre-wrap;
-  height: 80px;
+ /* height: 80px;*/
   border-top: 1px solid white;;
 }
 
@@ -58,6 +76,9 @@ textarea{
 }
 
 .saveBtn {
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -66,6 +87,6 @@ textarea{
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 36px;
   transition: all .3s ease-in-out;
 }
